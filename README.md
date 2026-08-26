@@ -53,7 +53,7 @@
 
 *Open-source tools, computer vision models, safety calculators, and research frameworks for occupational health &amp; safety engineering. Repositories are sorted by GitHub Star Count.*
 
-| Repository | Stars | Category | Description |
+| Repository | Github_Stars | Category | Description |
 | :--- | :---: | :--- | :--- |
 | **[Ansarimajid/Construction-PPE-Detection](https://github.com/Ansarimajid/Construction-PPE-Detection)** | [![GitHub stars](https://img.shields.io/github/stars/Ansarimajid/Construction-PPE-Detection?style=social&amp;color=white)](https://github.com/Ansarimajid/Construction-PPE-Detection/stargazers) | 👁️ AI / Computer Vision | Real-time computer vision system using YOLOv8, FastAPI, Docker, and alert dashboards to enforce PPE compliance on construction sites. |
 | **[Morteza-Asadi-Shalmaiy/PPE-Detection-YOLOv8](https://github.com/Morteza-Asadi-Shalmaiy/PPE-Detection-YOLOv8)** | [![GitHub stars](https://img.shields.io/github/stars/Morteza-Asadi-Shalmaiy/PPE-Detection-YOLOv8?style=social&amp;color=white)](https://github.com/Morteza-Asadi-Shalmaiy/PPE-Detection-YOLOv8/stargazers) | 👁️ AI / Deep Learning | Fine-tuned YOLOv8 deep learning model for detecting hard hats, high-visibility vests, goggles, and safety gear in video streams. |
