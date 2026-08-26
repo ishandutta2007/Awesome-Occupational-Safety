@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0b1329"/>
+    </linearGradient>
+
+    <!-- Glowing Accents -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Animated Pulse Style -->
+    <style>
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes floatShield {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes scanLine {
+        0% { transform: translateY(0px); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(240px); opacity: 0; }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -100; }
+      }
+      .shield-float {
+        animation: floatShield 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .pulse-ring {
+        animation: pulseGlow 3s ease-in-out infinite;
+        transform-origin: 980px 180px;
+      }
+      .scanner-beam {
+        animation: radarSweep 10s linear infinite;
+        transform-origin: 980px 180px;
+      }
+      .dash-line {
+        stroke-dasharray: 8 6;
+        animation: dashMove 12s linear infinite;
+      }
+      .scan-bar {
+        animation: scanLine 4s ease-in-out infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Geometric Grid Background Pattern -->
+  <g opacity="0.12">
+    <path d="M 0 60 L 1200 60 M 0 120 L 1200 120 M 0 180 L 1200 180 M 0 240 L 1200 240 M 0 300 L 1200 300" stroke="#38BDF8" stroke-width="0.8"/>
+    <path d="M 120 0 L 120 360 M 240 0 L 240 360 M 360 0 L 360 360 M 480 0 L 480 360 M 600 0 L 600 360 M 720 0 L 720 360 M 840 0 L 840 360 M 960 0 L 960 360 M 1080 0 L 1080 360" stroke="#38BDF8" stroke-width="0.8"/>
+  </g>
+
+  <!-- Ambient Glow Behind Elements -->
+  <circle cx="980" cy="180" r="140" fill="#10B981" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="150" cy="80" r="100" fill="#06B6D4" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- Right Side Interactive Graphic / Safety Radar -->
+  <g class="pulse-ring">
+    <circle cx="980" cy="180" r="130" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="980" cy="180" r="95" fill="none" stroke="#06B6D4" stroke-width="1" opacity="0.6"/>
+    <circle cx="980" cy="180" r="60" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Radar Crosshairs & Dynamic Sweep -->
+  <g opacity="0.35">
+    <line x1="980" y1="40" x2="980" y2="320" stroke="#10B981" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="840" y1="180" x2="1120" y2="180" stroke="#10B981" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <g class="scanner-beam">
+    <path d="M 980 180 L 1100 130 A 130 130 0 0 0 980 50 Z" fill="url(#glowGrad)" opacity="0.25"/>
+  </g>
+
+  <!-- Central Floating Safety Shield Icon -->
+  <g class="shield-float" filter="url(#subtleGlow)">
+    <!-- Outer Shield Frame -->
+    <path d="M 980 95 L 1045 125 C 1045 190 1015 240 980 265 C 945 240 915 190 915 125 Z" 
+          fill="url(#shieldGrad)" stroke="#34D399" stroke-width="3" opacity="0.95"/>
+    
+    <!-- Inner Shield Accent -->
+    <path d="M 980 110 L 1030 135 C 1030 185 1005 225 980 248 C 955 225 930 185 930 135 Z" 
+          fill="#064E3B" opacity="0.6"/>
+    
+    <!-- Safety Cross & Checkmark Symbol -->
+    <path d="M 960 178 L 974 192 L 1004 158" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="980" cy="180" r="4" fill="#34D399"/>
+  </g>
+
+  <!-- Dynamic Status Indicator Nodes -->
+  <g opacity="0.85">
+    <circle cx="880" cy="110" r="4" fill="#10B981" filter="url(#glow)"/>
+    <circle cx="1080" cy="120" r="3.5" fill="#38BDF8" filter="url(#glow)"/>
+    <circle cx="910" cy="270" r="3" fill="#F59E0B" filter="url(#glow)"/>
+    <circle cx="1060" cy="250" r="4" fill="#10B981" filter="url(#glow)"/>
+  </g>
+
+  <!-- Left Content Area -->
+  <g transform="translate(60, 0)">
+    <!-- Category Pill Tag -->
+    <g transform="translate(0, 50)">
+      <rect width="210" height="28" rx="14" fill="#132F2B" stroke="#10B981" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="4.5" fill="#10B981" filter="url(#glow)"/>
+      <text x="28" y="19" fill="#34D399" class="badge-text">CURATED ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title with Gradient Fill -->
+    <text x="0" y="132" class="title-text" font-size="40" fill="#FFFFFF">
+      Awesome Occupational Safety
+    </text>
+
+    <!-- Subtitle / Focus Area -->
+    <text x="0" y="172" class="subtitle-text" font-size="20" fill="#38BDF8">
+      Environment, Health &amp; Safety (EHS) • Compliance • Incident Ops
+    </text>
+
+    <!-- Description Paragraph -->
+    <text x="0" y="212" class="subtitle-text" font-size="15" fill="#94A3B8">
+      Curated index of SaaS category leaders, computer vision PPE detectors,
+    </text>
+    <text x="0" y="234" class="subtitle-text" font-size="15" fill="#94A3B8">
+      OSHA datasets, ergonomics calculators, and open-source HSE tools.
+    </text>
+
+    <!-- Feature Pillars Badges -->
+    <g transform="translate(0, 270)">
+      <!-- Badge 1: SaaS Leaders -->
+      <g transform="translate(0, 0)">
+        <rect width="150" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">
+          🏢 SaaS Leaders
+        </text>
+      </g>
+
+      <!-- Badge 2: Open Source -->
+      <g transform="translate(160, 0)">
+        <rect width="145" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">
+          ⚡ Open Source
+        </text>
+      </g>
+
+      <!-- Badge 3: AI & PPE Vision -->
+      <g transform="translate(315, 0)">
+        <rect width="165" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">
+          👁️ AI &amp; PPE Vision
+        </text>
+      </g>
+
+      <!-- Badge 4: OSHA & Calculators -->
+      <g transform="translate(490, 0)">
+        <rect width="185" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">
+          📊 Metrics &amp; OSHA
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Gradient Line -->
+  <rect x="0" y="356" width="1200" height="4" rx="2" fill="url(#accentGrad)"/>
+</svg>
