@@ -1,6 +1,6 @@
 # Awesome-Occupational-Safety
 
-# Top Occupational Safety (EHS) Platforms Ecosystem
+## Top Occupational Safety (EHS) Platforms Ecosystem
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 *Focused on Incident Management, Inspections, Audits, Risk Assessment, Compliance, Training & Workplace Safety*
 **Last updated: August 2026**
