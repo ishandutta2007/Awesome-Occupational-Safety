@@ -14,41 +14,25 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
 ## SaaS/Hosted Platforms
-- **[SafetyCulture (iAuditor)](https://safetyculture.com/)**  
-  Mobile-first platform focused on inspections, audits, checklists, and issue reporting. Widely adopted by frontline teams with extensive template libraries and offline capability.
 
-- **[Cority](https://www.cority.com/)**  
-  Enterprise EHSQ platform with deep occupational health, industrial hygiene, safety, environmental, and ESG capabilities for large organizations.
-
-- **[Intelex](https://www.intelex.com/)**  
-  Highly configurable EHS and quality management system from Fortive, supporting incidents, audits, risk, compliance, and operational excellence workflows.
-
-- **[VelocityEHS](https://www.velocityehs.com/)**  
-  Comprehensive EHS platform strong in chemical management, SDS, ergonomics, incident management, and industrial safety programs.
-
-- **[EcoOnline](https://www.ecoonline.com/)**  
-  European-oriented EHS platform covering chemical safety, lone-worker protection, incidents, and compliance management.
-
-- **[Evotix](https://www.evotix.com/)**  
-  Configurable EHS software for mid-market to global organizations, supporting risk, incidents, audits, and operational safety workflows.
-
-- **[Safesite](https://www.safesitehq.com/)**  
-  Mobile safety management platform focused on observations, incidents, inspections, and team engagement for construction and industrial sites.
-
-- **[EHS Insight](https://www.ehsinsight.com/)**  
-  Mid-market EHS solution emphasizing mobile inspections, incident tracking, and compliance management.
-
-- **[KPA](https://www.kpa.io/)**  
-  Safety and compliance platform popular with contractors and industrial firms, covering training, incidents, and audits.
-
-- **[SiteDocs](https://www.sitedocs.com/)**  
-  Digital safety documentation platform tailored to construction and trades, replacing paper forms with mobile-friendly workflows.
+| Product / Platform | Description & Core Focus | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[SafetyCulture (iAuditor)](https://safetyculture.com/)** | Mobile-first platform focused on inspections, audits, checklists, and issue reporting with extensive template libraries and offline capability. | Starts at **$24/user/month** (billed annually) or $29/user/month (billed monthly) | **Free Forever Plan**: Up to 10 active users, 5 active inspection templates, 300 AI credits/month, and unlimited inspections (includes 30-day Premium trial) |
+| **[Safesite](https://www.safesitehq.com/)** | Mobile safety management platform focused on observations, incidents, inspections, and team engagement for construction and industrial sites. | Starts at **$16/member/month** (billed annually) or $20/member/month (billed monthly) | **Free Forever Plan**: Unlimited members and mobile app access, restricted to 30 days of historical reporting data (includes 30-day Premium trial) |
+| **[EHS Insight](https://www.ehsinsight.com/)** | Mid-market EHS solution emphasizing mobile inspections, incident tracking, audit trails, and compliance management. | Starts at **~$9/user/month** (or ~$4,600–$5,000/year for standard SMB packages) | **14-Day Free Trial**: Full access to core incident management and inspection modules |
+| **[Intelex](https://www.intelex.com/)** | Highly configurable enterprise EHS & quality management system supporting incidents, audits, risk, and operational workflows. | Starts at **$44–$49/user/month** (Safety Essentials plan, billed annually with a 25-user minimum ~$13,200/year) | **Custom Free Trial**: Available upon qualification request (no credit card required) for evaluation environments |
+| **[VelocityEHS](https://www.velocityehs.com/)** | Comprehensive EHS suite strong in chemical management, SDS, ergonomics, incident management, and industrial safety. | Starts at **~$100–$200/month** for single-user entry-level chemical/incident modules (~$500–$1,000/mo for 10 users) | **Free Trial (SDS module)**: Includes up to 5 Safety Data Sheet (SDS) downloads; 30-day guided pilot available upon sales request |
+| **[KPA (KPA Flex)](https://www.kpa.io/)** | Safety and compliance platform popular with contractors and industrial firms, covering training, incidents, and audits. | Starts at **~$24–$29/user/month** (or ~$3,000–$5,000/year for entry-level workforce bundles) | **Demo / Sandbox Trial**: Available upon sales request for pilot testing safety inspection workflows |
+| **[SiteDocs](https://www.sitedocs.com/)** | Digital safety documentation platform tailored to construction and trades, replacing paper forms with mobile-friendly workflows. | Starts at **~$1,500–$2,500/year** for small contractor teams | **7-Day Guided Trial**: Available upon sales consultation with sample safety form templates and admin access |
+| **[EcoOnline](https://www.ecoonline.com/)** | European-oriented EHS platform covering chemical safety, lone-worker protection, incidents, and compliance management. | Starts at **~£3,000/year (~$3,800/year)** per core module (Safety/Chemical Manager) | **Guided POC / Trial**: Customized proof-of-concept environment provided during the sales evaluation process |
+| **[Evotix](https://www.evotix.com/)** | Configurable EHS software for mid-market to global organizations, supporting risk, incidents, audits, and operational safety. | Starts at **~£9,995/year (~$12,500/year)** for foundational standalone modules | **Guided Sandbox Trial**: Access provided following initial scoping and requirements consultation |
+| **[Cority](https://www.cority.com/)** | Enterprise EHSQ platform with deep occupational health, industrial hygiene, safety, environmental, and ESG capabilities. | Starts at **~$40–$50/user/month** (enterprise deployments start at ~$40,000–$80,000/year base depending on modules) | **Guided Enterprise Pilot**: Custom proof-of-concept / evaluation environment provided upon direct enterprise scoping |
 
 ## Open-Source GitHub Projects
 - **[DocuFinch](https://github.com/docufinch/docufinch-ehs)**  
